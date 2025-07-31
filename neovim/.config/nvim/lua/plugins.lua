@@ -63,7 +63,8 @@ local plugins = {
 
   {
     "nvim-treesitter/nvim-treesitter",
-    commit = 'a6b2f4e',
+    branch = 'master',
+    commit = '42fc28b',
     enabled = vim.fn.executable("tree-sitter") == 1,
     build = ":TSUpdate",
     config = function()
@@ -106,7 +107,7 @@ local plugins = {
 
   {
     "neovim/nvim-lspconfig",
-    version = '0.1.x',
+    version = '2.x',
     event = 'VeryLazy',
     ft = { 'c', 'cpp', 'objc', 'objcpp', 'cuda', 'proto', 'python', 'rust' },
     config = function()
