@@ -48,7 +48,7 @@ if !exists("cpp_no_cpp11")
   syn match cppCast		"\<\(const\|static\|dynamic\)_pointer_cast\s*<"me=e-1
   syn match cppCast		"\<\(const\|static\|dynamic\)_pointer_cast\s*$"
 
-  syn region cppAttrSpec	matchgroup=cppAttributeDelimiter start=+\[\[+ end=+\]\]+ contains=TOP
+  syn region cppAttrSpec	matchgroup=cppAttributeDelimiter start=+\[\s*\[+ end=+\]\s*\]+ contains=TOP
   syn keyword cppAttribute	noreturn carries_dependency contained containedin=cppAttrSpec
 endif
 
