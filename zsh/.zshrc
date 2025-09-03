@@ -43,6 +43,12 @@ if command -v promptus >/dev/null; then
   precmd() { PROMPT="$(eval 'promptus $?')" }
 fi
 
+function wslcd() {
+  p="${1//\\//}"
+  drive="${p%%:/*}"
+  cd "/mnt/${drive:l}/${p#${drive}:/}"
+}
+
 # this won't get used if promptus is found above
 export PROMPT="%F{yellow}%(?..%(130?.^C.%(${CONTROL_Z_CODE}?.^Z.%(148?.^Z.%B%F{red}%?))) )%B%F{magenta}%1~ %b%(!.%F{red}.%F{green})${PROMPT_CHAR}%f "
 
