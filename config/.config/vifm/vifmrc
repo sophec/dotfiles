@@ -38,7 +38,7 @@ set undolevels=100
 set novimhelp
 set norunexec
 colorscheme Default
-set timefmt=%m/%d\ %H:%M
+set timefmt=%F\ %T
 set wildmenu
 set wildstyle=popup
 set suggestoptions=normal,visual,view,otherpane,keys,marks,registers
