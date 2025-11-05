@@ -2,6 +2,7 @@
 *.swp
 config/.config/vifm/vifminfo
 config/.config/asciinema/install-id
+config/.config/asciinema/defaults.toml
 vim/.vim/plugged
 vim/.vim/.netrwhist
 config/.config/vifm/vifminfo.json
