@@ -65,6 +65,9 @@ local plugins = {
     "nvim-treesitter/nvim-treesitter",
     -- TODO: update to the main branch (where they fucked everything up and
     -- deleted all convenience features)
+    -- (the master branch will become incompatible with neovim soontm)
+    -- see also: https://github.com/lewis6991/ts-install.nvim
+    -- see also also: https://github.com/lewis6991/ts-install.nvim/issues/9
     branch = 'master',
     commit = '42fc28b',
     enabled = vim.fn.executable("tree-sitter") == 1,
@@ -87,6 +90,8 @@ local plugins = {
           "cpp", "bash", "cmake", "make", "json", "wing", "gitcommit",
         },
         auto_install = true,
+        -- TODO: how the fuck do I update all this to the new treesitter
+        -- version?
         highlight = {
           enable = true,
           custom_captures = {
