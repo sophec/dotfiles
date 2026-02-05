@@ -63,6 +63,8 @@ local plugins = {
 
   {
     "nvim-treesitter/nvim-treesitter",
+    -- TODO: update to the main branch (where they fucked everything up and
+    -- deleted all convenience features)
     branch = 'master',
     commit = '42fc28b',
     enabled = vim.fn.executable("tree-sitter") == 1,
