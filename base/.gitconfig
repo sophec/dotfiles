@@ -19,7 +19,7 @@
 	followTags = true
 [alias]
 	graph = log --graph --oneline --all
-	browse = !git log --color=always --pretty=\"format:%C(auto)%h%d %s\" | fzf --ansi --no-sort --with-nth=2.. --layout=reverse --preview=\"git show --color=always --decorate {1}\"
+	browse = !git log --color=always --pretty=\"format:%C(auto)%h%d %s\" | fzf --ansi --no-sort --with-nth=2.. --accept-nth 1 --layout=reverse --header=\"Search Commits\" --header-first --preview=\"git show --color=always --decorate {1}\"
 	amend = commit --amend
 
 [status]
