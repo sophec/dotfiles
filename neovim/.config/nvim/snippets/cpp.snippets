@@ -42,6 +42,13 @@ snippet externc
 	} /* extern "C" */
 	#endif /* __cplusplus */
 
+snippet nsopen
+	namespace ${1:ns} {
+
+	${0:${VISUAL}}
+
+	}  // namespace $1
+
 snippet copydecls
 	${1:ClassName}(const $1& other);
 	$1& operator=(const $1& rhs);
