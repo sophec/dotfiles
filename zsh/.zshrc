@@ -14,6 +14,7 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 source "$ZSH/plugins/colored-man-pages.zsh"
 source "$ZSH/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
 source "$ZSH/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+source "$ZSH/plugins/srcenv.zsh"
 
 # source all the other configs stolen from oh-my-zsh
 for config_file ($ZSH/lib/*.zsh); do

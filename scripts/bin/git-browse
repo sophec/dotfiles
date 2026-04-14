@@ -1,0 +1,9 @@
+#!/bin/sh -e
+
+git log --color=always --pretty="format:%C(auto)%h%d %s" \
+  | fzf --ansi --no-sort --with-nth=2.. --accept-nth 1 --layout=reverse \
+    --header="Search Commits" --header-first \
+    --bind=shift-page-up:preview-page-up,shift-page-down:preview-page-down \
+    --preview-window=~1,wrap-word \
+    --preview-label="Commit Preview" \
+    --preview="git show --color=always --decorate {1}"
