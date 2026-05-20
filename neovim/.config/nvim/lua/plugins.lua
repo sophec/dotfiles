@@ -30,12 +30,56 @@ local plugins = {
   {
     "folke/which-key.nvim",
     version = '2.1.0',
+    -- this version is fucked and bad, sticking with 2.1
+    -- version = '3.17.0',
     event = 'VeryLazy',
     opts = {
+      -- only applies in 3.x
+      preset = "helix",
       plugins = {
         spelling = {
           enabled = false,
         },
+      },
+      icons = {
+        separator = ">",
+        mappings = false,
+        --[[
+        -- This stuff is for 3.x, which is fucked and shitty, but I'll leave it
+        -- here since I might upgrade to a newer version one day.
+        --
+        -- WHY THE FUCK ARE FUCKING ICONS THE DEFAULT EVERYWHERE NOW!? FUCK OFF!
+        -- IT'S A TERMINAL, NOT A FUCKING TEXT MESSAGE!
+        -- If I wanted fucking emoji, I would have used VS Code.
+        keys = {
+          Up = "<Up>",
+          Down = "<Down>",
+          Left = "<Left>",
+          Right = "<Right>",
+          C = "<Ctrl>",
+          M = "<Alt>",
+          D = "<Cmd>",
+          S = "<Shift>",
+          CR = "<CR>",
+          Esc = "<Esc>",
+          NL = "<NL>",
+          BS = "<BS>",
+          Space = "<Space>",
+          Tab = "<Tab>",
+          F1 = "<F1>",
+          F2 = "<F2>",
+          F3 = "<F3>",
+          F4 = "<F4>",
+          F5 = "<F5>",
+          F6 = "<F6>",
+          F7 = "<F7>",
+          F8 = "<F8>",
+          F9 = "<F9>",
+          F10 = "<F10>",
+          F11 = "<F11>",
+          F12 = "<F12>",
+        },
+        ]]
       },
     },
   },
