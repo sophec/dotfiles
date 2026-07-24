@@ -59,6 +59,8 @@ export PROMPT2="%F{yellow}${PROMPT_CHAR}%f "
 # :)
 welcomename="$USER"
 welcomepunct="."
+# seed random
+RANDOM=$(date +%s)
 if [[ ${RANDOM: -1:1} == 8 ]]; then
   welcomename="cutie"
   welcomepunct="! <3"
