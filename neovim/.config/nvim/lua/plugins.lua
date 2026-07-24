@@ -131,7 +131,7 @@ local plugins = {
           "c", "lua", "vim", "vimdoc", "query", "regex", "luadoc", "comment",
         },
         ignore_install = {
-          "cpp", "bash", "cmake", "make", "json", "wing", "gitcommit",
+          "cpp", "bash", "make", "json", "wing", "gitcommit",
         },
         auto_install = true,
         -- TODO: how the fuck do I update all this to the new treesitter
@@ -143,7 +143,7 @@ local plugins = {
             ["punctuation.delimiter"] = "",
             ["operator"] = "",
           },
-          disable = { "c", "cpp", "bash", "cmake", "make" },
+          disable = { "c", "cpp", "bash", "make" },
           -- This fixes indentation at the cost of editor performance, but since
           -- I'm using tree-sitter already, clearly performance is not
           -- a priority anyway.
