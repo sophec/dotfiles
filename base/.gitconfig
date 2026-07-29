@@ -15,6 +15,9 @@
 	gpgsign = true
 [tag]
 	gpgsign = true
+	sort = -creatordate
+[column]
+	tag = auto
 [push]
 	followTags = true
 [alias]
