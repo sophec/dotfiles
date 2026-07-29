@@ -50,6 +50,10 @@ function wslcd() {
   cd "/mnt/${drive:l}/${p#${drive}:/}"
 }
 
+function mkcd() {
+  mkdir -p "$1" && cd "$1"
+}
+
 # this won't get used if promptus is found above
 export PROMPT="%F{yellow}%(?..%(130?.^C.%(${CONTROL_Z_CODE}?.^Z.%(148?.^Z.%B%F{red}%?))) )%B%F{magenta}%1~ %b%(!.%F{red}.%F{green})${PROMPT_CHAR}%f "
 
